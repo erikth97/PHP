@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="formulario">
+    <form action="form.php" method="POST">
+        <table>
+            <tr>
+                <td> <input type="text" placeholder="Name" name="student" required> </td>
+            </tr>
+            <tr>
+                <td> <input type="password" placeholder="Password" name="password" required> </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" name="sex" value="F" required> Female
+                    <input type="radio" name="sex" value="M" required> Male
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="email" placeholder="Email" name="email" required> </td>
+            </tr>
+            <tr>
+                   <td> 
+                       <select class="seleccion" name="subject" required>
+                            <option selected hidden value="">Select a subject</option>
+                            <option value="Math">Math</option>
+                            <option value="DataBases">Data Bases</option>
+                            <option value="DesingSystems">Desing Systems</option>
+                            <option value="Microservices">Microservices</option>
+                            <option value="CloudComputing">Cloud Computing</option>
+                       </select> 
+                  </td>
+            </tr>
+            <tr>
+                <td> <input type="phone" placeholder="Phone Number" name="phone" required> </td>
+            </tr>
+            <tr>
+                    <td>
+                        <input type="submit" value="Submit" name="submit">
+                    </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
